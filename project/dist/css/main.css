@@ -1,0 +1,9 @@
+.test {
+	display: block;
+	color: #ddd;
+}
+.test .test2 {
+	display: block;
+	color: red;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtDQUNJO0NBQ0E7O0FBQ0E7Q0FDSTtDQUNBIiwiZmlsZSI6Im1haW4uY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnRlc3Qge1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICBjb2xvcjogI2RkZDtcclxuICAgIC50ZXN0MiB7XHJcbiAgICAgICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICAgICAgY29sb3I6IHJlZDtcclxuICAgIH1cclxufSJdfQ== */
