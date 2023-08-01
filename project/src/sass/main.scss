@@ -1,8 +1,16 @@
-.test {
-    display: block;
-    color: #ddd;
-    .test2 {
-        display: block;
-        color: red;
+.showcase-main-kv {
+    position: relative;
+    &-logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        img {
+             width: 100%;
+        }
     }
 }
+
+.showcase {height: 1000px;}
