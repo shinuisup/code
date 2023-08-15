@@ -571,6 +571,21 @@
 	.showcase-full-video {
 		font-size: 0;
 		line-height: 0;
+		position: relative;
+		&__logo {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			img {
+				width: 64.722vw;
+			}
+		}
+		// &.active {
+		// 	.showcase-full-video__logo {
+		// 		animation: opacity 1s 1s both ease-out;
+		// 	}
+		// }
 	}
 	.m-showcase-text {
 		font-size: 0;
