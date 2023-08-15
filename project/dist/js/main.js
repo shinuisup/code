@@ -144,7 +144,7 @@
     loadSlider();
   }
   window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }
 
 function loadSlider (){
@@ -223,7 +223,7 @@ function loadSlider (){
     },
   });
 
-  new Swiper(".showcase-disegner__silder", {
+  new Swiper(".showcase-designer__silder", {
     freeMode: true,
     slidesPerView: 'auto',
   

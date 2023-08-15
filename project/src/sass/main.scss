@@ -183,6 +183,9 @@
 			img {
 				width: 100%;
 			}
+			&.active {
+				animation: slider 1s .3s both ease-out;
+			}
 		}
 		&__silder {
 			.swiper-slide {
@@ -221,9 +224,7 @@
 					}
 				}
 			}
-			&.active {
-				animation: slider 1s .3s both ease-out;
-			}
+		
 		}
 	
 		&.pick-type02 {
