@@ -106,7 +106,7 @@
   //   cardFlipOnScroll.init()
   // })
 
-
+  const intro = document.querySelector('.showcase-intro');
 
   var animation = function () {
     var items, winH;
@@ -142,114 +142,117 @@
   window.onload = function(){
     animation().init();
     loadSlider();
+    setTimeout(() => {
+      intro.style.display = "none";
+    }, "4000");
   }
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   }
-
-function loadSlider (){
-  new Swiper(".showcase-full-img__slider", {
-    observer: true,
-    observeParents: true,
-    slidesPerView: 'auto',
-    loop: true,
-    speed: 3000,
-    allowTouchMove: false,
-    disableOnInteraction: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: true
-    }
-  });
-
-  new Swiper(".showcase-fade-in__slider", {
-    observer: true,
-    observeParents: true,
-    slidesPerView: 'auto',
-    effect: "fade",
-    loop: true,
-    speed: 800,
-    allowTouchMove: false,
-    disableOnInteraction: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: true
-    }
-  });
   
+  function loadSlider (){
+    new Swiper(".showcase-full-img__slider", {
+      observer: true,
+      observeParents: true,
+      slidesPerView: 'auto',
+      loop: true,
+      speed: 3000,
+      allowTouchMove: false,
+      disableOnInteraction: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: true
+      }
+    });
 
-  new Swiper(".showcase-fade-in__slider", {
-    observer: true,
-    observeParents: true,
-    slidesPerView: 'auto',
-    effect: "fade",
-    loop: true,
-    speed: 800,
-    allowTouchMove: false,
-    disableOnInteraction: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: true
-    }
-  });
+    new Swiper(".showcase-fade-in__slider", {
+      observer: true,
+      observeParents: true,
+      slidesPerView: 'auto',
+      effect: "fade",
+      loop: true,
+      speed: 800,
+      allowTouchMove: false,
+      disableOnInteraction: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: true
+      }
+    });
+    
 
-  new Swiper(".showcase-progressbar__slider", {
-    freeMode: true,
-    slidesPerView: 'auto',
-    pagination: {
-      el: ".pagination_progress",
-      type: "progressbar",
-    },
-  });
+    new Swiper(".showcase-fade-in__slider", {
+      observer: true,
+      observeParents: true,
+      slidesPerView: 'auto',
+      effect: "fade",
+      loop: true,
+      speed: 800,
+      allowTouchMove: false,
+      disableOnInteraction: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: true
+      }
+    });
 
-  new Swiper(".showcase-free__slider", {
-    freeMode: true,
-    slidesPerView: 'auto',
-    loop: true,
-    speed: 4000,
-    slideToClickedSlide: false,
-    allowTouchMove: false,
-    autoplay: {
-      delay: 0,
-    }
-  });
+    new Swiper(".showcase-progressbar__slider", {
+      freeMode: true,
+      slidesPerView: 'auto',
+      pagination: {
+        el: ".pagination_progress",
+        type: "progressbar",
+      },
+    });
 
-  new Swiper(".showcase-benefit-event__slider", {
-    freeMode: true,
-    slidesPerView: 'auto',
-    pagination: {
-      el: ".pagination_progress",
-      type: "progressbar",
-    },
-  });
+    new Swiper(".showcase-free__slider", {
+      freeMode: true,
+      slidesPerView: 'auto',
+      loop: true,
+      speed: 4000,
+      slideToClickedSlide: false,
+      allowTouchMove: false,
+      autoplay: {
+        delay: 0,
+      }
+    });
 
-  new Swiper(".showcase-designer__silder", {
-    freeMode: true,
-    slidesPerView: 'auto',
-  
-  });
+    new Swiper(".showcase-benefit-event__slider", {
+      freeMode: true,
+      slidesPerView: 'auto',
+      pagination: {
+        el: ".pagination_progress",
+        type: "progressbar",
+      },
+    });
 
-  new Swiper(".showcase-new-item-type03", {
-    loop: true,
-    speed: 800,
-    slideToClickedSlide: false,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,      
-    }
-  });
+    new Swiper(".showcase-designer__silder", {
+      freeMode: true,
+      slidesPerView: 'auto',
+    
+    });
 
-  new Swiper(".showcase-progressbar-type02__slider", {
-    freeMode: true,
-    slidesPerView: 'auto',
-    pagination: {
-      el: ".pagination_progress",
-      type: "progressbar",
-    },
-  });
+    new Swiper(".showcase-new-item-type03", {
+      loop: true,
+      speed: 800,
+      slideToClickedSlide: false,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,      
+      }
+    });
+
+    new Swiper(".showcase-progressbar-type02__slider", {
+      freeMode: true,
+      slidesPerView: 'auto',
+      pagination: {
+        el: ".pagination_progress",
+        type: "progressbar",
+      },
+    });
 
 
-}
+  }
  
 
 })();
