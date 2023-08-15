@@ -214,7 +214,7 @@ function loadSlider (){
     }
   });
 
-  new Swiper(".showcase-benefit__slider", {
+  new Swiper(".showcase-benefit-event__slider", {
     freeMode: true,
     slidesPerView: 'auto',
     pagination: {
@@ -227,6 +227,25 @@ function loadSlider (){
     freeMode: true,
     slidesPerView: 'auto',
   
+  });
+
+  new Swiper(".showcase-new-item-type03", {
+    loop: true,
+    speed: 800,
+    slideToClickedSlide: false,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,      
+    }
+  });
+
+  new Swiper(".showcase-progressbar-type02__slider", {
+    freeMode: true,
+    slidesPerView: 'auto',
+    pagination: {
+      el: ".pagination_progress",
+      type: "progressbar",
+    },
   });
 
 
