@@ -7,26 +7,42 @@
 	<link rel="stylesheet" href="./css/common.css">
 	<script defer src="./js/main.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<title>Document</title>
 </head>
 <body>
-	<div>
-		<div class="showcase-intro">
-			<div class="showcase-intro__logo">
-				<img class="gsap-animation__item" src="./video/main_kv_logo.png">
-			</div>
-		</div>
+	<div class="event_area">
 		<div class="showcase-area">
 			<section class="showcase showcase-main-kv-video">
 				<div class="showcase showcase-main-kv-video__box">
-					<video poster="./video/main_kv.png"  autoplay loop muted >
+					<video class="main-kv-video" loop muted>
 						<source src="./video/main_kv.mp4" type="video/mp4">
 						<strong>main_kv</strong>
 					</video>
+					<div class="mouse">
+						<span></span>
+					</div>
+			
 				</div>
-				<div class="showcase-main-kv-video__logo">
+				<!-- <div class="showcase-main-kv-video__logo">
 					<img class="gsap-animation__item" src="./video/main_kv_logo.png">
+				</div> -->
+				<div class="opening">
+					<div class="img01"><img src="./images/kv_logo_01.png"></div>
+					<div class="text">
+						<div class="box">
+							<span>SHOWCASE</span>
+							<span>SHOWCASE</span>
+							<span>SHOWCASE</span>
+							<span>SHOWCASE</span>
+						</div>
+					</div>
+					<div class="bg-txt">
+						<span>20</span>
+						<span>23</span>
+						<span>SEA</span>
+						<span>SON</span>
+					</div>
 				</div>
 			</section>
 			
@@ -34,13 +50,13 @@
 				<div class="swiper showcase-timer__content">
 					<div class="showcase-timer__content-txt">
 						<span>Live</span>
-						<span>|</span>
+						<span class="dot">|</span>
 						<span>10월13일(금) 오후 8시</span>
 					</div>
 					<div class="showcase-timer__content-time">
-						<span class="showcase-timer__content-hour">20</span>
+						<span class="showcase-timer__content-hour">00</span>
 						<span class="showcase-timer__content-dot">:</span>
-						<span class="showcase-timer__content-minute">55</span>
+						<span class="showcase-timer__content-minute">00</span>
 						<span class="showcase-timer__content-dot">:</span>
 						<span class="showcase-timer__content-second">00</span>
 					</div>
@@ -60,40 +76,79 @@
 				<span class="showcase-benefit__desc">리뷰 남기면 밀키 선글라스 증정 </span>
 			</section>
 
-			<section class="showcase showcase-profile">
-				<div class="showcase-profile__box">
-					<div class="showcase-profile__box-title">
-							<img src="./images/profile_title.png" alt="">
-					</div>
-					<div class="showcase-profile__box-img">
-						<dl>
-							<dt><img src="./images/profile_img01.png" alt=""></dt>
-							<dd><img src="./images/profile_img02.png" alt=""></dd>
-						</dl>
-						<dl>
-							<dt><img src="./images/profile_img03.png" alt=""></dt>
-							<dd><img src="./images/profile_img04.png" alt=""></dd>
-						</dl>
-					</div>
+
+			
+			<section class=" showcase-profile">
+				<div class="m-showcase-text showcase">
+					<img src="./images/profile_title.jpg" alt="">
+				</div>
+				<div class="showcase-profile__box showcase">
+					<dl>
+						<dt class="m-01"><img src="./images/profile_img01.png" alt=""></dt>
+						<dd>
+							<span class="txt01 m-02">DOCENT / FASHION</span>
+							<span class="txt02 m-03">
+								안녕하세요.<br />
+								언제 어디서든 예쁘게<br />
+								만들자가 목표인 16년차<br />
+								스타일리스트 이윤미입니다.
+							</span>
+							<span class="txt03 m-04">
+								레드카펫 혹은 브라운관 속<br />
+								빛나는 스타들의 패션을<br />
+								만들기 위해서 꾸준히 노력하고<br />
+								있습니다.
+							</span>
+						</dd>
+					</dl>
+					<dl>
+						<dt class="m-05"><img src="./images/profile_img03.png" alt=""></dt>
+						<dd>
+							<span class="txt01 m-06">Celebrity</span>
+							<span class="txt02 m-07">
+								안녕하세요. <br />
+								드라마,영화에서 차근차근<br />
+								필모를 쌓아가는중인<br />
+								배우 홍수주입니다. 
+							</span>
+							<span class="txt03 m-08">
+								많은 사람들에게 행복을 줄 수 있는 <br />
+								그런 배우가 되고 싶습니다.
+							</span>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			
-			<section class="m-showcase-text ">
-				<img src="./images/test_01.jpg" alt="">
-			</section>
-			<section class="m-showcase-text ">
-				<img src="./images/test_02.jpg" alt="">
-			</section>
-			<section class="m-showcase-text ">
-				<img src="./images/test_03.jpg" alt="">
-			</section>
-			<section class="m-showcase-text ">
-				<img src="./images/test_04.jpg" alt="">
+			<section class="showcase-scroll" style="background: #fff;">
+				<div class="showcase-scroll-sticky">
+					<div class="showcase-scroll__img">
+						<img src="./images/s_img04.png" class=""  alt="">
+						<img src="./images/s_img03.png" class="scroll_img" alt="">
+						<img src="./images/s_img03.png" class="scroll_img" alt="">
+						<img src="./images/s_img03.png" class="scroll_img" alt="">
+						<img src="./images/s_img02.png" class="scroll_img" alt="">
+						<img src="./images/s_img02.png" class="scroll_img" alt="">
+						<img src="./images/s_img02.png" class="scroll_img" alt="">
+						<img src="./images/s_img02.png" class="scroll_img" alt="">
+						<img src="./images/s_img02.png" class="scroll_img" alt="">
+						<img src="./images/s_img02.png" class="scroll_img" alt="">
+						<img src="./images/s_img04.png" class="scroll_img"  alt="">
+						<img src="./images/s_img04.png" class="scroll_img"  alt="">
+						<img src="./images/s_img04.png" class="scroll_img"  alt="">
+						<img src="./images/s_img04.png" class="scroll_img"  alt="">
+						<img src="./images/s_img04.png" class="scroll_img"  alt="">
+						<div class="scroll_img scroll_img-bg">
+							<img src="./images/s_img05.png"  alt="">
+						</div>
+						
+					</div>
+				</div>
 			</section>
 
 			<section class="showcase showcase-full-video">
 				<div class="showcase-full-video_box">
-					<video poster="./video/video_30sec.png" width="100%" autoplay loop muted >
+					<video width="100%" autoplay loop muted >
 						<source src="./video/video_30sec.mp4" type="video/mp4">
 						<strong>Your browser does not support the video tag.</strong>
 					</video>
@@ -102,16 +157,18 @@
 			
 			<section class="showcase-designer">
 				<div class="swiper showcase-designer__img-box">
-					<div class="m-showcase-text showcase">
-						<img src="./images/designer_img01.jpg" alt="">
+					<div class="showcase">
+						<div class="m-showcase-text m-01">
+							<img src="./images/designer_img01.jpg" alt="">
+						</div>
+						<div class="m-showcase-text m-02">
+							<img src="./images/designer_img02.jpg" alt="">
+						</div>
+						<div class="m-showcase-text m-03">
+							<img src="./images/designer_img03.jpg" alt="">
+						</div>
 					</div>
-					<div class="m-showcase-text showcase">
-						<img src="./images/designer_img02.jpg" alt="">
-					</div>
-					<div class="m-showcase-img showcase">
-						<img src="./images/designer_img03.jpg" alt="">
-					</div>
-					<div class="m-showcase-text showcase">
+					<div class="m-showcase-text">
 						<img src="./images/designer_img04.jpg" alt="">
 					</div>
 					<div class="m-showcase-text ">
@@ -125,19 +182,20 @@
 							<div class="swiper-slide"><img src="./images/designer_pick_img04.png" alt="img4"></div>
 						</div>
 					</div>
-					<img src="./images/designer_img06.jpg" alt="">
 				</div>
 			</section>
 
 			<section class="showcase-designer pick-type02">
 				<div class="swiper showcase-designer__img-box">
-					<div class="m-showcase-text showcase">
-						<img src="./images/designer02_img01.jpg" alt="">
+					<div class="showcase">
+						<div class="m-showcase-text m-01">
+							<img src="./images/designer02_img01.jpg" alt="">
+						</div>
+						<div class="m-showcase-text m-02">
+							<img src="./images/designer02_img02.jpg" alt="">
+						</div>
 					</div>
-					<div class="m-showcase-text showcase">
-						<img src="./images/designer02_img02.jpg" alt="">
-					</div>
-					<div class="m-showcase-text showcase">
+					<div class="m-showcase-text">
 						<img src="./images/designer02_img03.jpg" alt="">
 					</div>
 					<div class="m-showcase-text ">
@@ -151,7 +209,6 @@
 							<div class="swiper-slide"><img src="./images/designer02_pick_img04.png" alt="img4"></div>
 						</div>
 					</div>
-					<img src="./images/designer02_img05.jpg" alt="">
 				</div>
 			</section>
 
@@ -175,6 +232,15 @@
 						<div class="swiper-slide"><img src="./images/free_slider_img01.jpg" alt="img1"></div>
 						<div class="swiper-slide"><img src="./images/free_slider_img02.jpg" alt="img2"></div>
 						<div class="swiper-slide"><img src="./images/free_slider_img03.jpg" alt="img3"></div>
+					</div>
+				</div>
+			</section>
+			<section class="showcase showcase-free" dir="rtl">
+				<div class="swiper showcase-free__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="./images/free_slider_img06.jpg" alt="img1"></div>
+						<div class="swiper-slide"><img src="./images/free_slider_img05.jpg" alt="img2"></div>
+						<div class="swiper-slide"><img src="./images/free_slider_img04.jpg" alt="img3"></div>
 					</div>
 				</div>
 			</section>
@@ -210,12 +276,21 @@
 							<img src="./images/item-type03.png" alt="">
 						</li>
 					</ul>
+					<div class="showcase-text-box">
+						<div class="showcase-text-box__title">
+							Pique Onepiece
+						</div>
+						<p class="showcase-text-box__desc">
+							바디라인을 살려주는 피케 니트 원피스입니다. <br />
+							버튼 포인트는 디테일 더하고 5부 기장의 소매는 <br />
+							서머 데일리 스타일링에 좋아요. 고밀도 원사를 사용한 원단이 <br />
+							적당한 무게감을 만들어 주죠.<br />
+						</p>
+					</div>
 				</div>
-				<div class="m-showcase-text showcase">
-					<img src="./images/new_item_02.jpg" alt="">
-				</div>
+				
 				<div class="showcase showcase-progressbar">
-					<div class="swiper showcase-progressbar__slider">
+					<div class="showcase-progressbar__slider">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide"><a href="https://www.orr.co.kr/product/detail.html?product_no=37305&cate_no=688&display_group=1"><img src="./images/slider_img01.png" alt="img1"></a></div>
 							<div class="swiper-slide"><a href="https://www.orr.co.kr/product/detail.html?product_no=37529&cate_no=688&display_group=1"><img src="./images/slider_img02.png" alt="img2"></a></div>
@@ -223,47 +298,63 @@
 						</div>
 						<div class="swiper-pagination pagination_progress"></div>
 					</div>
-				</div>
-				<div class="m-showcase-text showcase">
-					<img src="./images/new_item_03.jpg" alt="">
+					<div class="showcase-text-box">
+						<div class="showcase-text-box__title">
+							pleats Onepiece
+						</div>
+						<p class="showcase-text-box__desc">
+							디테일이 매력적인 플리츠 원피스입니다. 신축성이 좋아 사이즈에<br />
+							구애받지 않고 누구나 편하게 입을 수 있어요. <br />
+							적당한 깊이감의 스퀘어 넥과 편안한 허리 밴딩으로 소재의 매력을 <br />
+							가장 잘 느낄 수 있게 디자인 되었어요.
+						</p>
+					</div>
 				</div>
 				<div class="showcase showcase-new-item-type02">
 					<ul>
 						<li><img src="./images/new_item_img01.png" alt=""></li>
 						<li><img src="./images/new_item_img02.png" alt=""><img src="./images/new_item_img03.png" alt=""></li>
 					</ul>
-				</div>
-				<div class="m-showcase-text showcase">
-					<img src="./images/new_item_04.jpg" alt="">
+					<div class="showcase-text-box">
+						<div class="showcase-text-box__title">
+							DRY Onepiece
+						</div>
+						<p class="showcase-text-box__desc">
+							드레스라고 표현해야 될 것 같은 새틴 훌 드레스 입니다.<br />
+							신축성있는 폴리혼방 소재를 사용했고, 광택이 은은하게 나는 <br />
+							소재입니다. 종아리를 충분히 덮는 기장감과 발목 윗부분까지 <br />
+							자연스럽게 떨어지는 여유 있는 실루엣이 라인을 슬림하게 잡아주죠.
+						</p>
+					</div>
 				</div>
 			</section>
 		
-			<section class="showcase showcase-full-video">
-				<div class="showcase-full-video_box">
-					<video poster="./video/video_logo.png" width="100%" autoplay loop muted >
-						<source src="./video/video_logo.mp4" type="video/mp4">
-						<strong>Your browser does not support the video tag.</strong>
-					</video>
-				</div>
-				<div class="showcase-full-video__logo">
-					<img src="./images/brand_logo.png" alt="">
-				</div>
-			</section>
+		
 
 			<section class="showcase-new-item">
 				<div class="m-showcase-text showcase">
 					<img src="./images/new02_item_01.jpg" alt="">
 				</div>
 				<div class="showcase showcase-new-item-type03">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="./images/summer_main_img01.png" alt=""></div>
-						<div class="swiper-slide"><img src="./images/summer_main_img02.png" alt=""></div>
-						<div class="swiper-slide"><img src="./images/summer_main_img03.png" alt=""></div>
+					<div class="showcase-new-item-type03__img-box">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="./images/summer_main_img01.png" alt=""></div>
+							<div class="swiper-slide"><img src="./images/summer_main_img02.png" alt=""></div>
+							<div class="swiper-slide"><img src="./images/summer_main_img03.png" alt=""></div>
+						</div>
+						<a href="#" class="plus-button"></a>
 					</div>
-					<a href="" class="plus-button"></a>
 				</div>
-				<div class="m-showcase-text showcase">
-					<img src="./images/new02_item_02.jpg" alt="">
+				<div class="showcase-text-box showcase">
+					<div class="showcase-text-box__title">
+						SUmmer knit cardigan
+					</div>
+					<p class="showcase-text-box__desc">
+						여름에 더 손이 많이 가는 썸머 패디드 가디건. 여름 원사를 사용해<br />
+						폭염에도 불쾌함 없이 입을 수 있어요. 트위스트 디자인으로 허리<br />
+						옆으로 달아낸 단추에 연결해 볼륨감있게 연출하거나, 이너 없이<br />
+						단추를 다채워 관능적으로 연출 할수 도 있습니다.
+					</p>
 				</div>
 				<div class="showcase showcase-new-item-type04 bgf7">
 					<ul>
@@ -276,9 +367,17 @@
 						<li><img src="./images/summer02_item01.png" alt=""></li>
 						<li><img src="./images/summer02_item02.png" alt=""> <a href="#" class="plus-button"></a></li>
 					</ul>
-				</div>
-				<div class="m-showcase-text showcase">
-					<img src="./images/new02_item_03.jpg" alt="">
+					<div class="showcase-text-box">
+						<div class="showcase-text-box__title">
+							SUmmer knit cardigan
+						</div>
+						<p class="showcase-text-box__desc">
+							여름에 더 손이 많이 가는 썸머 패디드 가디건. 여름 원사를 사용해<br />
+							폭염에도 불쾌함 없이 입을 수 있어요. 트위스트 디자인으로 허리<br />
+							옆으로 달아낸 단추에 연결해 볼륨감있게 연출하거나, 이너 없이<br />
+							단추를 다채워 관능적으로 연출 할수 도 있습니다.
+						</p>
+					</div>
 				</div>
 				<div class="showcase showcase-new-item-type06">
 					<ul>
@@ -323,22 +422,24 @@
 				</div>
 			</section>
 			
-			<div class="showcase showcase-progressbar-type02">
-				<div class="swiper showcase-progressbar-type02__slider">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide"><a href="#"><img src="./images/new03_item02_img02.png" alt="img1"></a></div>
-						<div class="swiper-slide"><a href="#" class="plus-button"></a><img src="./images/new03_item02_img03.png" alt="img1"></div>
-						<div class="swiper-slide"><a href="#"><img src="./images/new03_item02_img02.png" alt="img1"></a></div>
-						<div class="swiper-slide"><a href="#"><img src="./images/new03_item02_img03.png" alt="img1"></a></div>
-						<div class="swiper-slide"><a href="#"><img src="./images/new03_item02_img02.png" alt="img1"></a></div>
-						<div class="swiper-slide"><a href="#"><img src="./images/new03_item02_img03.png" alt="img1"></a></div>
+			<section class="showcase showcase-progressbar-type02">
+				<div class="showcase-progressbar-type02__box">
+					<div class="showcase-progressbar-type02__slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><a href="#"><img src="./images/new03_item02_img02.png" alt="img1"></a></div>
+							<div class="swiper-slide"><a href="#"><span class="plus-button"></span><img src="./images/new03_item02_img03.png" alt="img1"></a></div>
+							<div class="swiper-slide"><a href="#"><img src="./images/new03_item02_img02.png" alt="img1"></a></div>
+							<div class="swiper-slide"><a href="#"><span class="plus-button"></span><img src="./images/new03_item02_img03.png" alt="img1"></a></div>
+							<div class="swiper-slide"><a href="#"><img src="./images/new03_item02_img02.png" alt="img1"></a></div>
+							<div class="swiper-slide"><a href="#"><span class="plus-button"></span><img src="./images/new03_item02_img03.png" alt="img1"></a></div>
+						</div>
+						<div class="swiper-pagination pagination_progress"></div>
 					</div>
-					<div class="swiper-pagination pagination_progress"></div>
 				</div>
 				<div class="showcase-progressbar-type02__bg">
 					<img src="./images/new03_item02_img01.png" alt="">
 				</div>
-			</div>
+			</section>
 			
 			<section class="showcase showcase-benefit-event">
 				<div class="showcase-benefit-event__slider">
@@ -349,6 +450,17 @@
 						<div class="swiper-slide"><img src="./images/benefit.png" alt=""></div>
 					</div>
 					<div class="swiper-pagination pagination_progress"></div>
+				</div>
+			</section>
+			<section class="showcase showcase-full-video">
+				<div class="showcase-full-video_box">
+					<video width="100%" autoplay loop muted >
+						<source src="./video/video_logo.mp4" type="video/mp4">
+						<strong>Your browser does not support the video tag.</strong>
+					</video>
+				</div>
+				<div class="showcase-full-video__logo">
+					<img src="./images/brand_logo.png" alt="">
 				</div>
 			</section>
 			<!-- <section class="showcase showcase-fade-in">
