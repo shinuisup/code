@@ -123,29 +123,21 @@
 			<section class="showcase-scroll" style="background: #fff;">
 				<div class="showcase-scroll-sticky">
 					<div class="showcase-scroll__img">
-						<img src="./images/s_img04.png" class=""  alt="">
-						<img src="./images/s_img03.png" class="scroll_img" alt="">
-						<img src="./images/s_img03.png" class="scroll_img" alt="">
-						<img src="./images/s_img03.png" class="scroll_img" alt="">
-						<img src="./images/s_img02.png" class="scroll_img" alt="">
-						<img src="./images/s_img02.png" class="scroll_img" alt="">
-						<img src="./images/s_img02.png" class="scroll_img" alt="">
-						<img src="./images/s_img02.png" class="scroll_img" alt="">
-						<img src="./images/s_img02.png" class="scroll_img" alt="">
-						<img src="./images/s_img02.png" class="scroll_img" alt="">
-						<img src="./images/s_img04.png" class="scroll_img"  alt="">
-						<img src="./images/s_img04.png" class="scroll_img"  alt="">
-						<img src="./images/s_img04.png" class="scroll_img"  alt="">
-						<img src="./images/s_img04.png" class="scroll_img"  alt="">
-						<img src="./images/s_img04.png" class="scroll_img"  alt="">
+						<img src="./images/s_img04.png" class="fit-cover"  alt="">
+						<img src="./images/s_img03.png" class="scroll_img fit-contain" alt="">
+						<img src="./images/s_img02.png" class="scroll_img fit-contain" alt="">
+						<img src="./images/s_img04.png" class="scroll_img fit-cover"  alt="">
 						<div class="scroll_img scroll_img-bg">
-							<img src="./images/s_img05.png"  alt="">
+							<img src="./images/s_img05.png" class="fit-contain"  alt="">
 						</div>
 						
 					</div>
 				</div>
 			</section>
-
+			<section class="showcase showcase-b-txt">
+				<img src="./images/b_text01.jpg" class="showcase-b-txt__img01" alt="">
+				<img src="./images/b_text02.jpg" class="showcase-b-txt__img02" alt="">
+			</section>
 			<section class="showcase showcase-full-video">
 				<div class="showcase-full-video_box">
 					<video width="100%" autoplay loop muted >
@@ -158,14 +150,17 @@
 			<section class="showcase-designer">
 				<div class="swiper showcase-designer__img-box">
 					<div class="showcase">
-						<div class="m-showcase-text m-01">
-							<img src="./images/designer_img01.jpg" alt="">
+						<div class="m-showcase-text" style="height: 60vw; overflow: hidden;"  >
+							<img src="./images/designer_img01.jpg" class=" m-01" alt="">
 						</div>
-						<div class="m-showcase-text m-02">
-							<img src="./images/designer_img02.jpg" alt="">
+						<div class="m-showcase-text">
+							<img src="./images/designer_img02.jpg" class=" m-02" alt="">
 						</div>
-						<div class="m-showcase-text m-03">
-							<img src="./images/designer_img03.jpg" alt="">
+						<div class="m-showcase-video">
+							<video class="designer_video" width="100%" muted >
+								<source src="./video/designer_01.mp4" type="video/mp4">
+								<strong>Your browser does not support the video tag.</strong>
+							</video>
 						</div>
 					</div>
 					<div class="m-showcase-text">
@@ -174,12 +169,24 @@
 					<div class="m-showcase-text ">
 						<img src="./images/designer_img05.jpg" alt="">
 					</div>
-					<div class="showcase-designer__silder showcase">
+					<div class="showcase-designer__silder num-text showcase">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide"><img src="./images/designer_pick_img01.png" alt="img1"></div>
-							<div class="swiper-slide"><img src="./images/designer_pick_img02.png" alt="img2"></div>
-							<div class="swiper-slide"><img src="./images/designer_pick_img03.png" alt="img3"></div>
-							<div class="swiper-slide"><img src="./images/designer_pick_img04.png" alt="img4"></div>
+							<div class="swiper-slide">
+								<img src="./images/designer_pick_img01.png" alt="img1">
+								<span>드라이 볼륨 원피스</span>
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/designer_pick_img02.png" alt="img2">
+								<span>블랙 볼륨 원피스</span>
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/designer_pick_img03.png" alt="img3">
+								<span>트위드 블라우스</span>
+							</div>
+							<div class="swiper-slide">
+								<img src="./images/designer_pick_img04.png" alt="img4">
+								<span>썸머 루 하프 블라우스</span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -191,8 +198,11 @@
 						<div class="m-showcase-text m-01">
 							<img src="./images/designer02_img01.jpg" alt="">
 						</div>
-						<div class="m-showcase-text m-02">
-							<img src="./images/designer02_img02.jpg" alt="">
+						<div class="m-showcase-video">
+							<video class="designer_video02" width="100%" muted >
+								<source src="./video/designer_02.mp4" type="video/mp4">
+								<strong>Your browser does not support the video tag.</strong>
+							</video>
 						</div>
 					</div>
 					<div class="m-showcase-text">
@@ -203,10 +213,10 @@
 					</div>
 					<div class="showcase-designer__silder showcase">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide"><img src="./images/designer02_pick_img01.png" alt="img1"></div>
-							<div class="swiper-slide"><img src="./images/designer02_pick_img02.png" alt="img2"></div>
-							<div class="swiper-slide"><img src="./images/designer02_pick_img03.png" alt="img3"></div>
-							<div class="swiper-slide"><img src="./images/designer02_pick_img04.png" alt="img4"></div>
+							<div class="swiper-slide"><img src="./images/designer02_pick_img01.png" alt="img1"><span></span></div>
+							<div class="swiper-slide"><img src="./images/designer02_pick_img02.png" alt="img2"><span></span></div>
+							<div class="swiper-slide"><img src="./images/designer02_pick_img03.png" alt="img3"><span></span></div>
+							<div class="swiper-slide"><img src="./images/designer02_pick_img04.png" alt="img4"><span></span></div>
 						</div>
 					</div>
 				</div>

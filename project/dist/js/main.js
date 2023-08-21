@@ -4,8 +4,10 @@
 
   const intro = document.querySelector('.showcase-intro');
   const content = document.querySelector('.event_area');
-  const imgBg = document.querySelector('.showcase-scroll__img-bg');
-
+  const video = document.querySelector('.designer_video');
+  const video02 = document.querySelector('.designer_video02');
+  let step = 0;
+  let step02 = 0;
   var animation = function () {
     var items, winH;
     
@@ -30,6 +32,30 @@
           items[i].classList.remove("active");
         }
       }
+      var videoTop = video.getBoundingClientRect().top;
+      if(winH  * .6 > videoTop ) {
+        if (step == 0){
+          video.play();
+          step = 1
+        
+        }
+      }else if(winH < videoTop){
+        video.currentTime = 0;
+        step = 0
+      }
+
+      var videoTop02 = video02.getBoundingClientRect().top;
+      if(winH  * .6 > videoTop02 ) {
+        if (step02 == 0){
+          video02.play();
+          step02 = 1
+        
+        }
+      }else if(winH < videoTop02){
+        video02.currentTime = 0;
+        step02 = 0
+      }
+    
     }
     
     return {
@@ -187,25 +213,25 @@ class CardFlipOnScroll {
   }
 
   init() {
-    this.start = this.wrapper.offsetTop - 100
+    this.start = this.wrapper.offsetTop
     this.end = this.wrapper.offsetTop + this.wrapper.offsetHeight - innerHeight 
-    this.step = (this.end - this.start) / (this.length * 2)
+    this.step = (this.end - this.start) / this.length 
   }
 
   animate() {
     this.cards.forEach((card, i) => {
       const s = this.start + this.step * i
-      const e = s + this.step * (this.length + 1)
+      const e = s + this.step * this.length
 
       if (scrollY <= s) {
         card.style.opacity = '0'
       } else if (scrollY > s && scrollY <= e - this.step) {
         card.style.opacity = `
-              ${ (scrollY - s) / (e - s) }
+              ${ (scrollY - s) / (e - s) * 10 }
             `
       } else if (scrollY > e - this.step && scrollY <= e) {
         card.style.opacity = `
-              ${(scrollY - s) / (e - s) }
+              ${(scrollY - s) / (e - s)* 10 }
             `
       } else if (scrollY > e) {
         card.style.opacity = `
